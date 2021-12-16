@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    win
+{% endblock %}
+
+{% block main %}
+    <section class="container">
+        <h1 class="pb-2 fw-bold">You win!</h1>
+        <br>
+        <h2 class="pb-2">Congratulations</h2>
+        <p class="pb-0">You made it but feel free to try again whenever you like. The trends never stop changing after all!</p>
+        <img src="{{ url_for('static', filename='tigerWin.png')}}" class="bodyImage" align="middle" alt="tiger playing with yarn" />
+        <h4 class="pb-0">As an extra bit of FYI, here's the list of trends for today: </h4>
+        <p>{{ trends | join(", ") }}</p>
+        <br>
+        <p class="fw-bold">Click below to try again if you want to</p>
+        <div class="d-flex justify-content-evenly align-items-evenly">
+            <div class="d-flex flex-column mb-3 px-3">
+              <div class="col-auto">
+                <a href="/game" class="btn btn-secondary">Retry</a>
+              </div>
+            </div>
+            <div class="d-flex flex-column mb-3">
+              <div class="col-auto">
+                <a href="/" class="btn btn-secondary">Home</a>
+              </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

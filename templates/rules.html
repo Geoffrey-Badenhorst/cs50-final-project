@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Rules
+{% endblock %}
+
+{% block main %}
+    <section class="container">
+        <h1 class="pb-2 fw-bold">How to play</h1>
+        <p class="pt-3">Pick the most popular option between two trending topics for five rounds. If you guess one incorrect at any point, the game will be lost so be careful to pick right the first time</p>
+        <p class="pb-0">Simple enough, right? Now, let's see you try it for yourself!</p>
+        <img src="{{ url_for('static', filename='tigerRules.png')}}" class="bodyImage" align="middle" alt="tiger smiling" />
+        <p class="pt-3 pb-1 fw-bold">Click the button below to begin</p>
+        <a class="btn btn-secondary" href="/game" role="button">begin</a>
+    </section>
+{% endblock %}

@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    lose
+{% endblock %}
+
+{% block main %}
+    <section class="container">
+        <h1 class="pb-2 fw-bold">Incorrect</h1>
+        <br>
+        <h2>You lost with a score of {{ score }}</h2>
+        <p class="pb-0">Feel free to try again though!</p>
+        <img src="{{ url_for('static', filename='tigerLoss.png')}}" class="bodyImage" align="middle" alt="tiger shocked" />
+        <p class="fw-bold">click below to try again</p>
+        <div class="d-flex justify-content-evenly align-items-evenly">
+            <div class="d-flex flex-column mb-3 px-3">
+              <div class="col-auto">
+                <a href="/game" class="btn btn-secondary">Retry</a>
+              </div>
+            </div>
+            <div class="d-flex flex-column mb-3">
+              <div class="col-auto">
+                <a href="/" class="btn btn-secondary">Home</a>
+              </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    game
+{% endblock %}
+
+{% block main %}
+    <section class="container align-middle">
+        <h1 class="gameName gameColour pb-3">Guess those Views!</h1>
+        <p>Which trend that you typed do you think is the more popular one?</p>
+        <p>Round {{ score }} of {{ duration }}</p>
+        <form method ="post" action="/game">
+            <div class="d-flex justify-content-evenly align-items-evenly">
+                <div class="d-flex flex-column mb-3 px-3">
+                  <div class="col-auto">
+                    <button type="submit" class="btn btn-secondary" name="trend1" value="trend1">{{ trend1 }}</button>
+                  </div>
+                </div>
+                <div class="d-flex flex-column mb-3">
+                  <div class="col-auto">
+                    <button type="submit" class="btn btn-secondary" name="trend2" value="trend2">{{ trend2 }}</button>
+                  </div>
+                </div>
+            </div>
+        </form>
+    </section>
+{% endblock %}

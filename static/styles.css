@@ -1,0 +1,62 @@
+/* Yellowtail font import */
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.gameName {
+    font-family: 'Yellowtail', cursive, sans-serif;
+}
+
+.gameColour {
+    font-size: 72px;
+    background: -webkit-linear-gradient(left, rgba(33,128,196,255) 0%, rgba(229,0,83,255) 25%, rgba(110,185,43,255) 50%, rgba(246,171,0,255) 75%, rgba(98,0,13,255) 100%);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav-item:hover {
+    background-color: lightgrey;
+}
+
+main {
+    min-height: 75vh;
+}
+
+h3 {
+  text-decoration: underline;
+}
+
+p{
+    padding-bottom: 15px;
+}
+
+q {
+    font-style: italic;
+    font-size: 50px;
+}
+
+.bodyImage {
+    width: 148px;
+    height: auto;
+    margin: 15px;
+}
+
+.padded {
+    padding-bottom: 15px;
+}
+
+.coloured {
+    border: 0;
+    background: -moz-linear-gradient(left, rgba(33,128,196,255) 0%, rgba(229,0,83,255) 25%, rgba(110,185,43,255) 50%, rgba(246,171,0,255) 75%, rgba(98,0,13,255) 100%);
+    background: linear-gradient(to right, rgba(33,128,196,255) 0%, rgba(229,0,83,255) 25%, rgba(110,185,43,255) 50%, rgba(246,171,0,255) 75%, rgba(98,0,13,255) 100%);
+}
+
+.bordered {
+    border: 5px solid transparent;
+    border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+    border-image-slice: 1;
+}
