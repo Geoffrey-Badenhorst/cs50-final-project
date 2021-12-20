@@ -2,7 +2,7 @@
 #### Video Demo:  <URL HERE>
 #### Basic Description:  A web app game about trending results and which is less or more popular
 
-##### Libraries
+#### Libraries
 The following libraries were used for this project
 - [PyTrends](https://pypi.org/project/pytrends/)
 
